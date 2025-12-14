@@ -1,4 +1,4 @@
-# 📄 Project Documentation: SDSS Galaxy Classification
+# 📄 SDSS Galaxy Classification
 
 ## 1. Introduction
 
