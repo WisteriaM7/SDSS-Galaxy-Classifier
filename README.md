@@ -1,6 +1,6 @@
 # SDSS-Galaxy-Classifier
-🌌 SDSS Galaxy Classification: Quick Read
-Project Goal
+##🌌 SDSS Galaxy Classification: Quick Read
+###Project Goal
 Classify galaxies from the Sloan Digital Sky Survey (SDSS) as either Starforming or Starbursting using a pre-trained machine learning model.
 
 🛠️ Tech Stack
