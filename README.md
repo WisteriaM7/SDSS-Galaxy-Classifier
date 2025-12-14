@@ -1,27 +1,34 @@
-# 🌌 SDSS Galaxy Classification
-### Project Goal
-Classify galaxies from the Sloan Digital Sky Survey (SDSS) as either Starforming or Starbursting using a pre-trained machine learning model.
+# 🌌 SDSS Galaxy Classification using Machine Learning
 
-### 🛠️ Tech Stack
-Backend: Flask (Python)
+## Project Overview
 
-ML Model: Loaded via pickle (kmodel.pkl)
+This project implements a machine learning model to classify galaxies from the **Sloan Digital Sky Survey (SDSS)** astronomical data. The primary goal is to predict whether a given galaxy is **Starforming** or **Starbursting** based on its photometric properties and redshift.
 
-Frontend: HTML/CSS templates (home.html, input.html, output.html)
+The application provides a user-friendly web interface (built with **Flask**) where users can input key observational parameters of a galaxy and receive an instant prediction of its classification.
 
-### 🚀 Setup & Run
-Install dependencies: pip install flask pandas numpy scikit-learn
+## ✨ Features
 
-Run the application: python app.py
+* **Interactive Web Interface:** User input form for entering galaxy features.
+* **Backend Prediction:** Uses a pre-trained machine learning model (`kmodel.pkl`) to classify the galaxy.
+* **Data Driven:** Classification is based on real SDSS photometric and spectroscopic parameters.
 
-Access the app at: http://127.0.0.1:2222/
+## 💻 Tech Stack
 
-### 📊 Input Data
-The model requires 10 SDSS photometric features (e.g., i, z magnitudes, petroRad, petroFlux) submitted via the web form.
+| Component | Technology | Role |
+| :--- | :--- | :--- |
+| **Backend Framework** | Flask (Python) | Routing, handling form submission, and serving predictions. |
+| **Machine Learning** | Scikit-learn, Pandas | Model training (assumed to be K-Nearest Neighbors based on filename `kmodel.pkl`) and data manipulation. |
+| **Model Persistence** | Pickle | Serialization and loading of the pre-trained model. |
+| **Frontend** | HTML, CSS | Structure and styling of the web interface (Home, Input, Result pages). |
 
-### 🎯 Classification Output
-The model predicts one of two classes:
+## 🚀 Getting Started
 
-Starforming (Class 0)
+These instructions will get a copy of the project up and running on your local machine for development and testing purposes.
 
-Starbursting (Class 1)
+### Prerequisites
+
+You need to have Python and a package manager (pip) installed.
+
+```bash
+# Check your Python version
+python --version
