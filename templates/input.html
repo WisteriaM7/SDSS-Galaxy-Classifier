@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galaxy Input</title>
+</head>
+<body>
+
+<header>
+    <h1>SDSS Galaxy Classification using Machine Learning</h1>
+</header>
+
+<hr>
+
+<form action="/predict" method="POST">
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Column</th>
+            <th>Input</th>
+        </tr>
+
+        <tr>
+            <td>i</td>
+            <td><input type="number" step="any" name="i" required></td>
+        </tr>
+
+        <tr>
+            <td>z</td>
+            <td><input type="number" step="any" name="z" required></td>
+        </tr>
+
+        <tr>
+            <td>modelFlux_z</td>
+            <td><input type="number" step="any" name="modelFlux_z" required></td>
+        </tr>
+
+        <tr>
+            <td>petroRad_g</td>
+            <td><input type="number" step="any" name="petroRad_g" required></td>
+        </tr>
+
+        <tr>
+            <td>petroRad_r</td>
+            <td><input type="number" step="any" name="petroRad_r" required></td>
+        </tr>
+
+        <tr>
+            <td>petroFlux_z</td>
+            <td><input type="number" step="any" name="petroFlux_z" required></td>
+        </tr>
+
+        <tr>
+            <td>petroR50_u</td>
+            <td><input type="number" step="any" name="petroR50_u" required></td>
+        </tr>
+
+        <tr>
+            <td>petroR50_g</td>
+            <td><input type="number" step="any" name="petroR50_g" required></td>
+        </tr>
+
+        <tr>
+            <td>petroR50_i</td>
+            <td><input type="number" step="any" name="petroR50_i" required></td>
+        </tr>
+
+        <tr>
+            <td>petroR50_r</td>
+            <td><input type="number" step="any" name="petroR50_r" required></td>
+        </tr>
+    </table>
+
+    <br>
+    <button type="submit">Submit</button>
+
+</form>
+
+<hr>
+
+<footer>
+    <a href="/">Back to Home</a>
+</footer>
+
+</body>
+</html>
